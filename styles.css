@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 0 10%;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(169deg, rgb(153, 13, 13) 70%, white 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.hero picture {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 10px black;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.aboutme_content {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0 20px;
+  color: black;
+  box-shadow: 0 0px 10px #000;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+}
+
+.aboutme_content h1,
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.about-me-social {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  margin: 1rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.about-me-social .icons {
+  margin: 0 10px;
+}
+
+/*-=======WORKS=============*/
+/* Existing CSS from your code */
+section,
+footer {
+  padding: 0 10%;
+}
+
+.mywork {
+  margin-top: 5rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.cards {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  min-height: 400px;
+}
+
+.card-top {
+  background-color: rgb(135, 19, 19);
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* .card-top img {
+  width: 100%;
+  height: auto;
+} */
+
+.card-bottom {
+  padding: 1rem;
+}
+
+.nameAndicons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icons {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+footer {
+  margin-top: 10rem;
+  background-color: rgb(135, 19, 19);
+}
+
+.footer-content {
+  margin-top: 4rem;
+  display: flex;
+  color: #fff;
+  padding: 4rem 0;
+  flex-wrap: wrap;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.contactInfo .social-content{
+  margin-top: 2rem;
+}
+
+.footer-icon{
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .aboutme_content {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .about-me-social {
+    justify-content: flex-end;
+  }
+
+  .hero picture {
+    margin: 0;
+  }
+
+  .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .footer-content {
+    flex-wrap: nowrap;
+  }
+}
